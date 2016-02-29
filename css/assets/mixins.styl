@@ -1,0 +1,117 @@
+
+PX = (1/16)rem
+GS = 10*PX
+BR = 3*PX
+
+SHADOW_1 = 2*PX 2*PX 2*PX rgba(0,0,0, .1)
+
+mobile()
+  @media all and (max-width: 480px)
+    {block}
+tablet()
+  @media all and (max-width: 768px)
+    {block}
+desktop()
+  @media all and (max-width: 1024px)
+    {block}
+
+fly()
+  margin-left  auto
+  margin-right auto
+
+center-shift(size)
+  margin-top:  -(size/2)
+  margin-left: -(size/2)
+  position absolute
+  left 50%
+  top 50%
+
+openSans()
+  font-family: 'Open Sans', sans-serif;
+
+brad(amount = br)
+  border-radius amount
+
+t(position)
+  top position
+
+b(position)
+  bottom position 
+
+l(position)
+  left position
+
+r(position)
+  right position
+
+nw(position=0)
+  top   position
+  left  position
+ne(position=0)
+  top   position 
+  right   position
+sw(position=0)
+  bottom  position
+  left  position
+se(position=0)
+  bottom  position
+  right   position
+
+border(width, style= solid, color= black)
+  border-width width
+  border-style style
+  border-color color
+
+bbox()
+  box-sizing border-box
+
+cbox()
+  box-sizing content-box
+
+rect(size)
+  width size
+  height size
+
+circle(size)
+  rect size
+  border-radius 50%
+
+min-rect(size)
+  min-width size
+  min-height size
+
+hl(color=deeppink, size=1px)
+  outline size solid color
+
+textel()
+  white-space: nowrap
+  -webkit-text-overflow: ellipsis
+  -moz-text-overflow: ellipsis
+  -o-text-overflow: ellipsis
+  text-overflow: ellipsis
+  overflow:hidden
+
+clearfix()
+  zoom 1
+  &:after, &:before
+    content ''
+    display table
+  &:after
+    clear both
+
+placeholder-mixin(colorArg = white )
+  &::-webkit-input-placeholder { /* WebKit browsers */
+        color: colorArg
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: colorArg
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: colorArg
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: colorArg
+  }
+
+II = !important
+

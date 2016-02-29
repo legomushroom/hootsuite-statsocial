@@ -1,0 +1,57 @@
+<svg width="338px" height="221px" viewBox="0 0 338 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" class="tailored-block__svg">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+
+        <g id="js-market-research-cards" sketch:type="MSLayerGroup" transform="translate(55.000000, 34.000000)">
+            <g id="js-market-research-card-5" transform="translate(16.000000, 1.000000)" sketch:type="MSShapeGroup">
+                <path d="M0.332,0.427 L210.332,0.427 L210.332,140.411 L0.332,140.411 L0.332,0.427 Z" id="Fill-1" fill="#B5DFE3"></path>
+                <path d="M0.332,0.427 L210.332,0.427 L210.332,29.39 L0.332,29.39 L0.332,0.427 Z" id="Fill-2" fill="#E36869"></path>
+            </g>
+            <g id="js-market-research-card-4" transform="translate(10.000000, 1.000000)" sketch:type="MSShapeGroup">
+                <path d="M0.445,0.361 L216.445,0.361 L216.445,144.347 L0.445,144.347 L0.445,0.361 Z" id="Fill-3" fill="#B5DFE3"></path>
+                <path d="M0.445,0.361 L216.445,0.361 L216.445,30.154 L0.445,30.154 L0.445,0.361 Z" id="Fill-4" fill="#67B2CD"></path>
+            </g>
+            <g id="js-market-research-card-3" transform="translate(6.000000, 1.000000)" sketch:type="MSShapeGroup">
+                <path d="M0.445,0.527 L220.445,0.527 L220.445,147.18 L0.445,147.18 L0.445,0.527 Z" id="Fill-5" fill="#B5DFE3"></path>
+                <path d="M0.445,0.527 L220.445,0.527 L220.445,30.872 L0.445,30.872 L0.445,0.527 Z" id="Fill-6" fill="#85C9B8"></path>
+            </g>
+            <g id="js-market-research-card-2" transform="translate(3.000000, 1.000000)" sketch:type="MSShapeGroup">
+                <path d="M0.338,0.202 L223.338,0.202 L223.338,148.856 L0.338,148.856 L0.338,0.202 Z" id="Fill-7" fill="#B5DFE3"></path>
+                <path d="M0.338,0.202 L223.338,0.202 L223.338,30.962 L0.338,30.962 L0.338,0.202 Z" id="Fill-8" fill="#5CBBA1"></path>
+            </g>
+            <g id="js-market-research-card-1" sketch:type="MSShapeGroup" transform="translate(0,0)" >
+                <path d="M0.716,0.869 L227.182,0.869 L227.182,151.834 L0.716,151.834 L0.716,0.869 Z" id="Fill-9" fill="#B5DFE3"></path>
+                <path d="M48.954,91.576 C60.054,91.576 69.052,82.577 69.052,71.474 C69.052,60.371 60.054,51.369 48.954,51.369 C37.852,51.369 28.845,60.371 28.845,71.474 C28.845,82.577 37.852,91.576 48.954,91.576" id="Fill-10" fill="#FFFFFF"></path>
+                <path d="M76.876,131.499 C76.876,110.429 64.373,93.35 48.954,93.35 C33.53,93.35 21.025,110.429 21.025,131.499 C21.025,132.605 20.964,133.704 21.025,134.792 L48.954,134.792 L76.876,134.795 C76.948,133.71 76.876,132.607 76.876,131.499" id="Fill-11" fill="#FFFFFF"></path>
+                <path d="M0.716,0.869 L227.182,0.869 L227.182,32.107 L0.716,32.107 L0.716,0.869 Z" id="Fill-12" fill="#F6C281"></path>
+                <path d="M98.132,46.082 L160.224,46.082 L160.224,66.405 L98.132,66.405 L98.132,46.082 Z" id="Fill-13" fill="#67B2CD"></path>
+                <path d="M98.132,73.904 L199.176,73.904 L199.176,84.068 L98.132,84.068 L98.132,73.904 Z" id="Fill-14" fill="#67B2CD"></path>
+                <path d="M98.137,90.679 L199.176,90.679 L199.176,100.848 L98.137,100.848 L98.137,90.679 Z" id="Fill-15" fill="#67B2CD"></path>
+                <path d="M98.137,107.457 L199.176,107.457 L199.176,117.62 L98.137,117.62 L98.137,107.457 Z" id="Fill-16" fill="#67B2CD"></path>
+                <path d="M98.137,124.231 L199.176,124.231 L199.176,134.395 L98.137,134.395 L98.137,124.231 Z" id="Fill-17" fill="#67B2CD"></path>
+            </g>
+        </g>
+        <g id="js-market-research-trails-back" sketch:type="MSLayerGroup" transform="translate(-42, 34)">
+            <g>
+                <g transform="translate(-5, 10)">
+
+                    <path d="M0.755859375,43.5 L99,0.5" id="Path-38" sketch:type="MSShapeGroup"></path>
+                    <path d="M65.5,19.5 L96.7441406,6" id="Path-39" sketch:type="MSShapeGroup"></path>
+                </g>
+            </g>
+            <g>
+                <g transform="translate(-15, -84)">
+                    <path d="M227.755859,194 L326,151" id="Path-43" sketch:type="MSShapeGroup"></path>
+                    <path d="M271.744141,179.5 L304.5,165.5" id="Path-42" sketch:type="MSShapeGroup"></path>
+                </g>
+            </g>
+            <!-- <g>
+                <path d="M227.755859,43.5 L326,0.5" id="Path-45" sketch:type="MSShapeGroup"></path>
+                <path d="M253.744141,38 L286.5,24" id="Path-44" sketch:type="MSShapeGroup"></path>
+            </g> -->
+            <g>
+                <path d="M0.755859375,194 L99,151" id="Path-41" sketch:type="MSShapeGroup"></path>
+                <path d="M12.7441406,185 L68.2441406,160.5" id="Path-40" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

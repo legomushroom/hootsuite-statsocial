@@ -1,0 +1,6 @@
+a(class="hst-labeled-icon #{el.class || ''} hst-labeled-icon--#{el.modifier || ''}")
+  .hst-labeled-icon__icon
+    - var label = el.label
+    - var el    = { path: el.iconPath }
+    include ./icon
+  .hst-labeled-icon__label #{label}

@@ -1,0 +1,50 @@
+
+{ el = '.hst-labeled-icon' }
+  clearfix()
+  display block
+  cursor pointer
+  color c-dark1
+  &:hover
+    color c-blue1
+  &__icon
+    float left
+    margin-right GS
+    color inherit
+    rect 4*GS
+    .hst-icon
+      fill currentColor
+      rect 100%
+  &--help
+    cursor pointer
+    font-size 14*PX
+    font-weight bold 
+    {el}__icon
+      margin-top 4*PX 
+      margin-right 5*PX
+      rect 18*PX
+  &--small-help
+    font-size 12*PX
+    font-weight bold
+    {el}__icon
+      margin-top 3*PX
+      // margin-right 7*PX 
+      rect 16*PX
+  &--ibm-watson
+    font-size 8*PX
+    text-transform uppercase
+    letter-spacing .2*PX
+    font-weight bold
+    background-color c-dark4
+    padding 5*PX GS 7*PX
+    cursor default
+    &:hover
+      color c-dark1
+      cursor default
+    {el}__icon
+      rect 2*GS
+    {el}__label
+      margin-top 5*PX
+    
+    
+    
+    

@@ -1,0 +1,49 @@
+@import '../assets/imports.styl'
+
+{ el = '.hst-labeled-bars' }
+  position relative
+  // max-width 400*PX
+  min-width 350*PX
+  clearfix()
+  &:first-of-type,
+  &:last-of-type
+    {el}__baseline
+      &:before
+        content 'Twitter Average'
+        position absolute
+        font-size 13*PX 
+        width 10*GS
+        margin-left -5*GS
+        color  c-dark2
+  &:first-of-type
+    {el}__baseline
+      &:before
+        top -2*GS
+  &:last-of-type
+    {el}__baseline
+      &:before
+        bottom -2*GS
+  .hst-labeled-bar
+    float      left
+    width      100%
+  &__body
+    clearfix()
+    margin-left 5*GS
+    position relative
+    padding-top 2*GS 
+    padding-bottom 4*GS
+  &__baseline
+    height 99.5%
+    margin-top -4*GS
+    position absolute
+    left 55%
+    z-index 3
+    width PX
+    border-left PX dotted c-dark2
+  &__icon
+    position absolute
+    top 50%
+    left 0
+    margin-top -2*GS
+    
+    

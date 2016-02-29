@@ -1,0 +1,111 @@
+doctype 
+html
+  head
+    meta(charset='UTF-8')
+    meta(name="fragment", content="!")
+    meta(name="description  ", content="Unparalleled Twitter audience data and hyper-targeted segmentation. Our database has over 30K demographic and affinity segments on more than 50mm Twitter users.")
+    meta(name="viewport", content="width=device-width")
+    title Hootsuite - StatSocial App
+    link(href="css/main.css", rel="stylesheet", type="text/css")
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700', rel='stylesheet', type='text/css')
+
+  body
+    - var el = {}
+    include ./css/icons.svg
+    .main-column
+      .kit-icons.clearfix
+        - var el = { path: 'sex' }
+        include partials/icon
+        - var el = { path: 'earth' }
+        include partials/icon
+        - var el = { path: 'heart' }
+        include partials/icon
+        - var el = { path: 'influencer' }
+        include partials/icon
+        - var el = { path: 'personality' }
+        include partials/icon
+        - var el = { path: 'age' }
+        include partials/icon
+        - var el = { path: 'income' }
+        include partials/icon
+        - var el = { path: 'brand' }
+        include partials/icon
+        - var el = { path: 'tv' }
+        include partials/icon
+        - var el = { path: 'ibm-watson' }
+        include partials/icon
+        - var el = { path: 'info' }
+        include partials/icon
+        - var el = { path: 'statsocial' }
+        include partials/icon
+      br
+      hr
+      br
+      - var el = { text: 'New York' }
+      include partials/bar-label
+      br
+      - var el = { modifier: 'bold', text: 'New York' }
+      include partials/bar-label
+      br
+      - var el = { width: '100' }
+      include partials/bar
+      br
+      br
+      - var el = { text1: 'New York', barWidth: '100', text2: '124.21x' }
+      include partials/labeled-bar
+      br
+      br
+      br
+      br
+      br
+      br
+      mixin labeledBars()
+        .hst-labeled-bars
+          - el = { caption: 'Top Cities' }
+          include partials/labeled-bars-caption
+          .hst-labeled-bars__icon
+            - var el = { path: 'earth' }
+            include partials/icon
+          .hst-labeled-bars__body
+            .hst-labeled-bars__baseline
+            - var el = { modifier: 'bold', text1: 'New York', barWidth: '100', text2: '224.91x' }
+            include partials/labeled-bar
+            - var el = { text1: 'San Francisco', barWidth: '90', text2: '2.81x' }
+            include partials/labeled-bar
+            - var el = { text1: 'Washington', barWidth: '85', text2: '1.95x' }
+            include partials/labeled-bar
+            - var el = { text1: 'Chicago', barWidth: '80', text2: '1.84x' }
+            include partials/labeled-bar
+            - var el = { text1: 'Boston', barWidth: '72', text2: '1.41x' }
+            include partials/labeled-bar
+      div
+        +labeledBars()
+        +labeledBars()
+        +labeledBars()
+      
+      - var el = { text: 'Request Demo' }
+      include partials/link
+      
+      br
+      br
+      br
+
+      - var el = {}
+      include partials/switch
+
+      br
+
+      - var el = { modifier: 'help', label: 'Help', iconPath: 'info' }
+      include partials/labeled-icon
+
+      br
+
+      - var el = { modifier: 'help', class:'hst-labeled-icon--small-help', label: 'Help', iconPath: 'info' }
+      include partials/labeled-icon
+
+      br
+
+      - var el = { modifier: 'ibm-watson', label: 'Powered by IBM Watson', iconPath: 'ibm-watson' }
+      include partials/labeled-icon
+
+

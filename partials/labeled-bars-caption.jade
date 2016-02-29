@@ -1,0 +1,7 @@
+.hst-labeled-bars-caption(class="hst-label-bars-caption #{el.class || ''} hst-label-bars-caption--#{el.modifier || ''}", id="#{el.id || ''}")
+  .hst-labeled-bars-caption__text.hst-labeled-bars-caption__text--left
+    - var el = { text: el.caption || 'Sex', modifier: 'highlight-caption' }
+    include ./bar-label
+  .hst-labeled-bars-caption__text.hst-labeled-bars-caption__text--right
+    - var el = { text: 'Multiple', modifier: 'grey-caption' }
+    include ./bar-label

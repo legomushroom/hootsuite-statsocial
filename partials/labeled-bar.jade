@@ -1,0 +1,12 @@
+div(class="hst-labeled-bar #{el.class || ''} hst-labeled-bar--#{el.modifier || ''}", id="#{el.id || ''}")
+  .hst-labeled-bar__label.hst-labeled-bar__label--left
+    - var text1 = el.text1, text2 = el.text2;
+    - var barWidth = el.barWidth;
+    - var el = { text: text1 || 'New York' }
+    include ./bar-label
+  .hst-labeled-bar__bar
+    - var el = { width: barWidth || '100' }
+    include ./bar
+  .hst-labeled-bar__label.hst-labeled-bar__label--right
+    - var el = { text: text2 || '91.21x' }
+    include ./bar-label
