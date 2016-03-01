@@ -1,1 +1,1 @@
-div(class="hst-bar-label #{el.class || ''} hst-bar-label--#{el.modifier || ''}", id="#{el.id || ''}") #{el.text}
+#{el.tagName || 'div'}(class="hst-bar-label #{el.class || ''} hst-bar-label--#{el.modifier || ''}", id="#{el.id || ''}", href="#{el.link || ''}") #{el.text}

@@ -1,0 +1,8 @@
+.hst-company-stats-line(class="#{el.class || ''}")
+  .hst-company-stats-line__body
+    - var number1 = el.number1 || '1.4mm', number2 = el.number2 || '1.63'
+    - var text1 = el.text1 || 'followers', text2 = el.text2 || 'tweets/day'
+    - var el = { number: number1, text: text1 }
+    include ./company-stats
+    - var el = { number: number2, text: text2 }
+    include ./company-stats

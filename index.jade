@@ -108,4 +108,87 @@ html
       - var el = { modifier: 'ibm-watson', label: 'Powered by IBM Watson', iconPath: 'ibm-watson' }
       include partials/labeled-icon
 
+      br
+
+      - var el = {}
+      include partials/avatar
+
+      brh
+
+      - var el = { text: 'Audi', tagName: 'a', modifier: 'company-name' }
+      include partials/bar-label
+
+      - var el = { text: '@audi', tagName: 'a', modifier: 'company-username' }
+      include partials/bar-label
+
+      mixin companyAvatar()
+        .hst-company-avatar
+          .hst-company-avatar__avatar
+            - var el = {}
+            include partials/avatar
+          .hst-company-avatar__text
+            .hst-company-avatar__name
+              - var el = { text: 'Audi', tagName: 'a', modifier: 'company-name' }
+              include partials/bar-label
+            .hst-company-avatar__username
+              - var el = { text: '@audi', tagName: 'a', modifier: 'company-username' }
+              include partials/bar-label
+      +companyAvatar()
+
+      br
+      br
+      - var el = {}
+      include partials/company-stats
+
+      br
+      
+      - var el = { number: '1.63', text: 'tweets/day' }
+      include partials/company-stats
+
+      br
+
+      - var el = { }
+      include partials/company-stats-line
+
+      br
+
+      mixin companySwitchPanel()
+        .hst-company-switch-panel
+          .hst-company-switch-panel__left
+            - var el = {}
+            include partials/switch
+          .hst-company-switch-panel__right
+            - var el = { modifier: 'help', class:'hst-labeled-icon--small-help', label: 'Help', iconPath: 'info' }
+            include partials/labeled-icon
+      +companySwitchPanel()
+
+      br
+
+      .hst-company-controls
+        .hst-company-controls__avatar
+          +companyAvatar()
+        .hst-company-controls__stats-line
+          - var el = { }
+          include partials/company-stats-line
+        .hst-company-controls__switch-panel
+          +companySwitchPanel()
+
+      br
+
+      .hst-report-description
+        .hst-report-description__links
+          .hst-report-description__links-heading Help:
+            a(href="#") Definitions
+            a(href="#") Calculations
+            a(href="#") Using This Report
+        .hst-report-description__text
+          p Lorem ipsum dolor sit amet, consectatur adipicing elit. Sed do euismod tempor ut labora et dolora magna aliqua. Dolor sit amet, consectatur adipicing elit. Sed do euismod tempor ut labora et dolora magna aliqua.
+        .hst-report-description__button
+          - var el = { text: 'Request Demo' }
+          include partials/link
+      
+
+      
+
+
 

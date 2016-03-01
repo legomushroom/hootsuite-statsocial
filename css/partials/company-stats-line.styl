@@ -1,0 +1,19 @@
+
+.hst-company-stats-line
+  text-align center
+  position relative
+  clearfix()
+  &:before
+    content ''
+    position absolute
+    width 100%
+    top 12*PX
+    height PX
+    background-color c-dark4
+  &__body
+    position relative
+    z-index 2
+    display inline-block
+  .hst-company-stats
+    margin-right GS
+    float left
