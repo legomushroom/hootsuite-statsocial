@@ -60,7 +60,7 @@ html
       br
       br
       mixin labeledBars(className)
-        .hst-labeled-bars(class="#{className || ''} is-percentage")
+        .hst-labeled-bars(class="#{className || ''}")
           - el = { caption: 'Top Cities' }
           include partials/labeled-bars-caption
           .hst-labeled-bars__icon
@@ -82,6 +82,10 @@ html
         +labeledBars()
         +labeledBars()
         +labeledBars()
+        br
+        br
+        +labeledBars('hst-labeled-bars--percentage')
+
       
       - var el = { text: 'Request Demo' }
       include partials/link

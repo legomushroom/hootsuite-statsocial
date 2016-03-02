@@ -3,9 +3,13 @@
 { el = '.hst-labeled-bars' }
   position relative
   min-width 260*PX
-  &.is-percentage
+  &--percentage
     {el}__baseline
       display none
+    .hst-bar
+      &__line
+        &--grey
+          display none
   &--baseline-label
     {el}__baseline
       &:before
