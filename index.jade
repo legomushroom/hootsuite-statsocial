@@ -1,5 +1,5 @@
-doctype 
-html
+doctype
+html.hst-at-less-1040.hst-at-less-860.hst-at-less-600.hst-at-less-400.hst-at-less-370
   head
     meta(charset='UTF-8')
     meta(name="fragment", content="!")
@@ -59,8 +59,8 @@ html
       br
       br
       br
-      mixin labeledBars()
-        .hst-labeled-bars
+      mixin labeledBars(className)
+        .hst-labeled-bars(class="#{className || ''}")
           - el = { caption: 'Top Cities' }
           include partials/labeled-bars-caption
           .hst-labeled-bars__icon
@@ -68,15 +68,15 @@ html
             include partials/icon
           .hst-labeled-bars__body
             .hst-labeled-bars__baseline
-            - var el = { modifier: 'bold', text1: 'New York', barWidth: '100', text2: '224.91x' }
+            - var el = { modifier: 'bold', text1: 'Adventurousness', barWidth: '100', text2: '224.91x' }
             include partials/labeled-bar
             - var el = { text1: 'San Francisco', barWidth: '90', text2: '2.81x' }
             include partials/labeled-bar
-            - var el = { text1: 'Washington', barWidth: '85', text2: '1.95x' }
+            - var el = { text1: 'Rollsroyce Motor Cars', barWidth: '85', text2: '1.95x' }
             include partials/labeled-bar
-            - var el = { text1: 'Chicago', barWidth: '80', text2: '1.84x' }
+            - var el = { text1: 'Nico Hulkenberg', barWidth: '80', text2: '1.84x' }
             include partials/labeled-bar
-            - var el = { text1: 'Boston', barWidth: '72', text2: '1.41x' }
+            - var el = { text1: 'Motor City Masters', barWidth: '72', text2: '1.41x' }
             include partials/labeled-bar
       div
         +labeledBars()
@@ -164,30 +164,55 @@ html
 
       br
 
-      .hst-company-controls
-        .hst-company-controls__avatar
-          +companyAvatar()
-        .hst-company-controls__stats-line
-          - var el = { }
-          include partials/company-stats-line
-        .hst-company-controls__switch-panel
-          +companySwitchPanel()
+      mixin companyControls()
+        .hst-company-controls
+          .hst-company-controls__avatar
+            +companyAvatar()
+          .hst-company-controls__stats-line
+            - var el = { }
+            include partials/company-stats-line
+          .hst-company-controls__switch-panel
+            +companySwitchPanel()
+      
+      +companyControls()
 
       br
-
-      .hst-report-description
-        .hst-report-description__links
-          .hst-report-description__links-heading Help:
-            a(href="#") Definitions
-            a(href="#") Calculations
-            a(href="#") Using This Report
-        .hst-report-description__text
-          p Lorem ipsum dolor sit amet, consectatur adipicing elit. Sed do euismod tempor ut labora et dolora magna aliqua. Dolor sit amet, consectatur adipicing elit. Sed do euismod tempor ut labora et dolora magna aliqua.
-        .hst-report-description__button
-          - var el = { text: 'Request Demo' }
-          include partials/link
       
-
+      mixin reportDescription()
+        .hst-report-description
+          .hst-report-description__links
+            .hst-report-description__links-heading Help:
+              a(href="#") Definitions
+              a(href="#") Calculations
+              a(href="#") Using This Report
+          .hst-report-description__text
+            p Lorem ipsum dolor sit amet, consectatur adipicing elit. Sed do euismod tempor ut labora et dolora magna aliqua. Dolor sit amet, consectatur adipicing elit. Sed do euismod tempor ut labora et dolora magna aliqua.
+          .hst-report-description__button
+            - var el = { text: 'Request Demo' }
+            include partials/link
+      +reportDescription()
+      
+    .main-column.main-column--padding-less
+      .hst-report
+        .hst-report__body
+          +companyControls()
+          .hst-report__bars
+            .hst-report__bar
+              +labeledBars('hst-labeled-bars--baseline-label hst-labeled-bars--baseline-label-first')
+            .hst-report__bar
+              +labeledBars('hst-labeled-bars--baseline-label hst-labeled-bars--baseline-label-first-maybe')
+            .hst-report__bar
+              +labeledBars()
+            .hst-report__bar
+              +labeledBars()
+            .hst-report__bar
+              +labeledBars()
+            .hst-report__bar
+              +labeledBars('hst-labeled-bars--baseline-label hst-labeled-bars--baseline-label-last-maybe')
+            .hst-report__bar
+              +labeledBars('hst-labeled-bars--baseline-label hst-labeled-bars--baseline-label-last')
+            .hst-report__bar.hst-report__description
+              +reportDescription()
       
 
 
