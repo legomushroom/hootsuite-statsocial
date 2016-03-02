@@ -1,5 +1,5 @@
 doctype
-html.hst-at-less-1040.hst-at-less-860.hst-at-less-600.hst-at-less-400.hst-at-less-370
+html
   head
     meta(charset='UTF-8')
     meta(name="fragment", content="!")
@@ -60,7 +60,7 @@ html.hst-at-less-1040.hst-at-less-860.hst-at-less-600.hst-at-less-400.hst-at-les
       br
       br
       mixin labeledBars(className)
-        .hst-labeled-bars(class="#{className || ''}")
+        .hst-labeled-bars(class="#{className || ''} is-percentage")
           - el = { caption: 'Top Cities' }
           include partials/labeled-bars-caption
           .hst-labeled-bars__icon
@@ -193,7 +193,7 @@ html.hst-at-less-1040.hst-at-less-860.hst-at-less-600.hst-at-less-400.hst-at-les
       +reportDescription()
       
     .main-column.main-column--padding-less
-      .hst-report
+      .hst-report#js-report
         .hst-report__body
           +companyControls()
           .hst-report__bars
@@ -213,7 +213,9 @@ html.hst-at-less-1040.hst-at-less-860.hst-at-less-600.hst-at-less-400.hst-at-les
               +labeledBars('hst-labeled-bars--baseline-label hst-labeled-bars--baseline-label-last')
             .hst-report__bar.hst-report__description
               +reportDescription()
-      
+
+  script(src="js/any-resize-event.min.js")
+  script(src="js/main.js")
 
 
 
