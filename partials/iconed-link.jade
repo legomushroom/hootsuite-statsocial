@@ -1,0 +1,6 @@
+a(href="#{el.link || '#'}").hst-link
+  span.hst-link__icon
+    - var text = el.text || 'Login with Twitter'
+    - var el = { path: el.icon }
+    include ./icon
+  | #{text}

@@ -89,8 +89,13 @@ html
       
       - var el = { text: 'Request Demo' }
       include partials/link
-      
+
       br
+      br
+
+      - var el = { text: 'Login with Twitter', icon: 'twitter' }
+      include partials/iconed-link
+      
       br
       br
 
@@ -218,9 +223,25 @@ html
             .hst-report__bar.hst-report__description
               +reportDescription()
 
-  script(src="js/classlist-polyfill.js")
-  script(src="js/any-resize-event.min.js")
-  script(src="js/main.js")
+  //- script(src="js/classlist-polyfill.js")
+  //- script(src="js/any-resize-event.min.js")
+  //- script(src="js/main.js")
+  script(src="js/media.min.js")
+
+  .main-column.main-column--padding-less
+    .hst-login
+      .hst-login__icon
+        - var el = { path: 'statsocial' }
+        include partials/icon
+      .hst-login__button
+        - var el = { text: 'Login with Twitter', icon: 'twitter' }
+        include partials/iconed-link
+      .hst-login__description
+        span.hst-bold-g StatSocial App
+        p This is optional description of the app.
+        | New to StatSocial? <a href="#">Request demo</a> of our service.
+
+
 
 
 
