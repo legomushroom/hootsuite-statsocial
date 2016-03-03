@@ -1,0 +1,57 @@
+
+.hst-help
+  position absolute
+  ne 0
+  // height 100%
+  // overflow-y auto
+  width 100%
+  height 100%
+  max-width 30*GS
+  background-color white
+  box-shadow -2*PX 0 2*PX rgba(c-dark1, .2)
+  font-size 13*PX
+  line-height 1.35 
+  color c-dark2
+  text-align left
+  padding 2*GS
+  padding-bottom 12*GS 
+  h2,
+  h3
+    color c-dark1
+    font-weight bold
+  h2
+    text-transform uppercase
+    margin-bottom 1.5*GS 
+  h3
+    margin-bottom .5*GS 
+  p + h3
+    margin-top 1.5*GS 
+  img
+    max-width 100%
+    height auto
+    margin 2*GS 0
+    border-radius BR
+  
+  img,
+    p
+      & + h2
+        margin-top 1*GS
+        border-top 1px solid c-dark3
+        padding-top 2.5*GS
+  &__body
+    position absolute
+    nw 0
+    ne 0
+    bottom 6*GS 
+    overflow-y auto
+    padding 2*GS
+  &__button
+    position absolute
+    width 100%
+    bottom 1.7*GS
+    left 0
+    text-align center
+    padding-top 2*GS
+    border-top 1px solid c-dark3  
+    background-color #FFF 
+     

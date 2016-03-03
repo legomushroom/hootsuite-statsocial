@@ -241,6 +241,60 @@ html
         p This is optional description of the app.
         | New to StatSocial? <a href="#">Request demo</a> of our service.
 
+  .main-column.main-column--padding-less
+    .hst-report#js-report
+      .hst-report__body
+        +companyControls()
+        .hst-report__bars
+          .hst-report__bar
+            +labeledBars('hst-labeled-bars--baseline-label hst-labeled-bars--baseline-label-first')
+          .hst-report__bar
+            +labeledBars('hst-labeled-bars--baseline-label hst-labeled-bars--baseline-label-first-maybe')
+          .hst-report__bar
+            +labeledBars()
+          .hst-report__bar
+            +labeledBars()
+          .hst-report__bar
+            +labeledBars()
+          .hst-report__bar
+            +labeledBars('hst-labeled-bars--baseline-label hst-labeled-bars--baseline-label-last-maybe')
+          .hst-report__bar
+            +labeledBars('hst-labeled-bars--baseline-label hst-labeled-bars--baseline-label-last')
+          .hst-report__bar.hst-report__description
+            +reportDescription()
+      .hst-overlay
+      .hst-help
+        .hst-help__body
+          .hst-help__body-inner
+            h2 Definitions
+
+            h3 Index
+            p A comparison of the audience composition of this property (website, app or network) or Audience Segment to the Internet population. The higher the index number, the more concentrated the property is in a particular demographic. For example, if a property indexes 100 for age 18-24, that means a given visitor is as likely to be 18-24 as any internet user chosen at random. An index of 200 means the visitor is twice as likely to be 18-24, while an index of 50 means half as likely.
+            
+            h3 Composition
+            p The percentage of this property's total audience that meets the given demographic criteria.
+            img(src="http://lorempixel.com/400/300/fashion/")
+
+            
+            h2 Calculations
+            p We directly collect anonymous web and app usage data through the publishers and networks that use Quantcast Measure and have placed our pixel on their properties. We combine this with reference data from a small set of seed data, allowing our statistical models to accurately infer the demographic segments of a property's audience in aggregate.
+            img(src="http://lorempixel.com/400/320/fashion/")
+
+            h2 Using This Report
+            p Use the demographics report to understand what the demographic makeup of a given property or Audience Segment, including gender, age, presence of children in the household, and education status. Use this report to help you:
+            
+            h3 Support advertising sales efforts.
+            p Example.com is a news site that has used Audience Segments to divide their site into sections. They can then show advertisers that users of their Technology section are wealthy and highly educated, even if the rest of the site is more of "general audience".
+            
+            h3 Monitor your audience composition.
+            p News.com focuses on current events and has an audience that's aged 35-54 and highly educated. They add technology content to their site to appeal to a younger, but still educated, audience. They use Audience Segments to distinguish their current events and tech content, and confirm that their new tech audience is the demographic they hoped to reach.
+            img(src="http://lorempixel.com/400/350/fashion/")
+
+        .hst-help__button
+          - var el = { text: 'Close' }
+          include partials/link
+
+
 
 
 
