@@ -1,0 +1,36 @@
+
+.hst-company-controls
+  max-width 40*GS
+  text-align left
+  &__avatar
+    margin-bottom GS
+  &__switch-panel
+    margin-top 5*PX
+    padding-bottom 2*GS 
+    border-bottom PX solid c-dark4
+    {el = '.hst-switch'}
+      .hst-at-less-370 &
+        font-size 10*PX
+        padding-left 5.2*GS
+        &__label
+          padding-top 1*PX
+          letter-spacing .4*PX
+          &--left
+            margin-right 1*GS
+          &--right
+            margin-left 1.2*GS
+      input
+        .hst-at-less-370 &
+          &:checked ~ {el}__label
+            &--left
+              letter-spacing .8*PX
+            &--right
+              letter-spacing 0
+    .hst-company-switch-panel
+      &__right
+        padding-left GS
+        width 6*GS
+    
+          
+            
+      

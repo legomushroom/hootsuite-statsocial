@@ -1,0 +1,59 @@
+
+letterSpacing = .6*PX
+{ el = '.hst-switch' }
+  position relative
+  font-size 13*PX
+  color c-dark2 
+  font-weight bold
+  letter-spacing 0
+  padding-left  7*GS
+  padding-right 9*GS
+  &__base
+    height 3*GS
+    width 55*PX
+    background-color c-dark3
+    border-radius 5*GS
+    position relative
+  input
+    position absolute
+    nw -3*PX
+    z-index 2
+    cursor pointer
+    rect 100%
+    opacity 0
+    &:checked ~ {el}__circle
+      transform translateX(2.5*GS)
+    &:checked ~ {el}__label
+      &--left
+        color c-dark2
+        font-weight normal
+        letter-spacing letterSpacing
+      &--right
+        color c-dark1
+        font-weight bold
+        letter-spacing 0
+  &__circle
+    background-color white
+    border-radius 50%
+    position absolute
+    box-shadow SHADOW_1
+    nw 0
+    transition all .15s ease-out
+    rect 3*GS
+  &__label
+    position absolute
+    top 4*PX
+    cursor pointer
+    &:hover
+      opacity .75
+    &--left
+      color c-dark1
+      right 100%
+      margin-right 1.5*GS
+      text-align right
+    &--right
+      text-align left
+      left 100%
+      margin-left 1.5*GS 
+      font-weight normal
+      letter-spacing letterSpacing

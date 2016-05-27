@@ -1,0 +1,44 @@
+
+@import '../assets/imports.styl'
+
+.hst-loading
+  color             c-dark1
+  max-width         18.5*GS
+  fly()
+  &__spinner
+    rect            62.5*PX
+    margin-bottom   4*GS
+    position        relative
+    fly()
+  &__text
+    font-weight     bold
+    font-size       14*PX
+    letter-spacing  .44*PX
+    line-height     19*PX
+  &__description
+    font-weight     normal
+    font-size       12*PX
+    letter-spacing  .38*PX
+    line-height     15*PX
+    
+    margin-top      GS
+  
+  &__double-bounce1,
+  &__double-bounce2
+    rect             100%
+    border-radius    50%
+    background-color #44AAD2
+    opacity          0.6
+    position         absolute
+    top              0
+    left             0
+    animation        hst-sk-bounce 2.0s infinite ease-in-out
+    backface-visibility hidden
+
+  &__double-bounce2
+    animation-delay -1.0s
+  
+@keyframes hst-sk-bounce {
+  0%, 100% {  transform: scale(0.0); }
+  50% { transform: scale(1); }
+}

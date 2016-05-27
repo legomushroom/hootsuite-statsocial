@@ -1,0 +1,33 @@
+@import '../assets/imports.styl'
+
+.hst-labeled-bar
+  &__label,
+  &__bar
+    float left
+  &__bar
+    width 50%
+    .hst-at-less-370 &
+      width 40%
+  &__label
+    text-align right
+    &--left
+      width 30%
+      padding-right 1.5*GS
+      display table
+      height 5*GS
+      margin-top - 1.5*GS
+      .hst-bar-label
+        display table-cell
+        vertical-align middle
+      .hst-at-less-370 &
+        width 40%
+    &--right
+      width 20%
+      margin-top 3*PX 
+  &--bold
+    .hst-bar-label
+      font-weight bold
+  .hst-at-less-370 &
+    .hst-bar-label
+      font-size 9*PX
+  

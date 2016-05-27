@@ -36,6 +36,8 @@ html
         include partials/icon
         - var el = { path: 'info' }
         include partials/icon
+        - var el = { path: 'exit' }
+        include partials/icon
         - var el = { path: 'statsocial' }
         include partials/icon
       br
@@ -114,6 +116,16 @@ html
 
       br
 
+      - var el = { modifier: 'help', label: 'Exit', iconPath: 'exit' }
+      include partials/labeled-icon
+
+      br
+
+      - var el = { modifier: 'help', class:'hst-labeled-icon--small-help', label: 'Exit', iconPath: 'exit' }
+      include partials/labeled-icon
+
+      br
+
       - var el = { modifier: 'ibm-watson', label: 'Powered by IBM Watson', iconPath: 'ibm-watson' }
       include partials/labeled-icon
 
@@ -168,6 +180,8 @@ html
             include partials/switch
           .hst-company-switch-panel__right
             - var el = { modifier: 'help', class:'hst-labeled-icon--small-help', label: 'Help', iconPath: 'info' }
+            include partials/labeled-icon
+            - var el = { modifier: 'help', class:'hst-labeled-icon--small-help', label: 'Exit', iconPath: 'exit' }
             include partials/labeled-icon
       +companySwitchPanel()
 
@@ -228,6 +242,8 @@ html
   //- script(src="js/main.js")
   script(src="js/media.min.js")
 
+  br
+
   .main-column.main-column--padding-less
     .hst-login
       .hst-login__icon
@@ -240,6 +256,27 @@ html
         span.hst-bold-g StatSocial App
         p This is optional description of the app.
         | New to StatSocial? <a href="#">Request demo</a> of our service.
+
+  br
+
+  mixin loading ()
+    .hst-loading
+      .hst-loading__spinner
+        .hst-loading__double-bounce1
+        .hst-loading__double-bounce2
+
+      .hst-loading__text Generating the report..
+      .hst-loading__description It can take up to 5 minutes depending on size of your audience.
+
+  .main-column.main-column--padding-less
+    .hst-login
+      +loading()
+      .hst-login__description
+        span.hst-bold-g StatSocial App
+        p This is optional description of the app.
+        | New to StatSocial? <a href="#">Request demo</a> of our service.
+
+  br
 
   .main-column.main-column--padding-less
     .hst-report#js-report

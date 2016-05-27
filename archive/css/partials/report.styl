@@ -1,0 +1,54 @@
+
+.hst-report
+  text-align center
+  padding 4*GS 6*GS
+  position relative
+  .hst-overlay
+    z-index 10
+  .hst-help
+    z-index 11
+    max-height 100%
+  .hst-at-less-600 &
+    padding 2*GS
+  .hst-at-less-400 &
+    padding GS
+  .hst-report__body
+    display inline-block
+    padding 0 4*GS
+    .hst-at-less-1040 &
+      padding 0
+  .hst-report__bars
+    display inline-block
+    padding-top 6*GS
+    clearfix()
+    .hst-at-less-600 &
+      padding-top 5*GS
+  &__bar
+    width 50%
+    float left
+    .hst-at-less-860 &
+      width 100%
+      clear both
+    padding = 4*GS
+    &:nth-of-type(odd)
+      padding-right padding
+    &:nth-of-type(even)
+      padding-left padding
+    .hst-at-less-1040 &
+      padding = 2*GS
+      &:nth-of-type(odd)
+        padding-right padding
+      &:nth-of-type(even)
+        padding-left padding
+    .hst-at-less-860 &
+      &:nth-of-type(odd),
+      &:nth-of-type(even)
+        padding 0
+  &__description
+    padding-top 5*GS 
+    .hst-at-less-860 &
+      margin-top 4*GS
+    .hst-at-less-400 &
+      margin-top 3*GS
+    
+    
